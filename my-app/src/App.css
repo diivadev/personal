@@ -1,25 +1,88 @@
+@import url(https://fonts.google.com/specimen/Open+Sans);
+@import url(https://fonts.google.com/specimen/Playfair+Display);
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  text-align: left;
 }
 
 .App-title {
-  font-size: 1.5em;
+  padding-top: 30px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 150;
+  padding-left: 80px;
+
 }
 
-.App-intro {
-  font-size: large;
+.App-intro{
+  font-size: 13px;
+  padding-left: 80px;
+}
+
+.App-intro img{
+  width: 3%;
+  top: 5px;
+}
+
+.navbar{
+  padding: 15px 50px 50px 0;
+  margin: 0;
+  text-align: right;
+  position: relative;
+  bottom: 70px;
+}
+
+.navitem {
+  font-weight: 200;
+  color: black;
+  text-decoration: none;
+  padding: 1%;
+  margin-right: 20px;
+}
+.first_row{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* padding: 20px 5%; */
+}
+
+.second_row{
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  padding: 20px 5%;
+}
+
+.HPD, .OCD, .PPD, .GGD{
+  font-weight: 150;
+  position:relative;
+  color: black;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  transition: opacity .2s, visibility .2s;
+}
+
+
+.blah:hover, .blah2:hover, .blah3:hover, .blah4:hover{
+  cursor: pointer;
+  opacity: 0.68;
+}
+
+.blah:hover .HPD, .blah2:hover .OCD, .blah3:hover .PPD, .blah4:hover .GGD{
+  visibility: visible;
+  cursor: pointer;
+
+}
+
+.HP img, .OmniCloset img, .PP img, .Visualize img{
+  width: 620px;
+  padding-right: 10px;
 }
 
 @keyframes App-logo-spin {
