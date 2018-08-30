@@ -13,34 +13,7 @@ import {BrowserRouter, Route, Link, Router} from 'react-router-dom';
 
 import HP from './HP.js';
 
-const R= () => (
-<Router>
-  <div>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/topics">Topics</Link>
-      </li>
-    </ul>
 
-    <hr />
-
-
-    <Route path="/about" component={About} />
-  </div>
-</Router>
-);
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-);
 class Home extends Component {
 
 
@@ -48,12 +21,24 @@ class Home extends Component {
     return (
 
       <div className="App">
+      <header className="App-header">
+        <Link to="/"> <h1 className="App-title"> Nyssa Chennubhotla </h1> </Link>
+
+          <p className="App-intro">
+             <code>Nys to meet you </code>
+          </p>
+        <div className="navbar">
+            <a href="#" className="navitem">Work</a>
+            <a href="#" className="navitem">Learn</a>
+            <a href="#" className="navitem">About</a>
+          </div>
+      </header>
 
         <div className="Nyssa-body">
 
           <div className="first_row">
 
-            <div className="HP">
+            <div className="Homep">
               <div className="blah">
                 <Link to="/HP" >
                     <img src={hpimg} />

@@ -2,9 +2,11 @@
 @import url(https://fonts.google.com/specimen/Playfair+Display);
 
 .App {
-  text-align: left;
+  background-color: #f4ebe2;
 }
-
+.App-header {
+  background-color: #f4ebe2;
+}
 .App-title {
   padding-top: 30px;
   text-align: left;
@@ -80,7 +82,7 @@
 
 }
 
-.HP img, .OmniCloset img, .PP img, .Visualize img{
+.Homep img, .OmniCloset img, .PP img, .Visualize img{
   width: 620px;
   padding-right: 10px;
 }

@@ -18,18 +18,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Nyssa Chennubhotla</h1>
-            <p className="App-intro">
-               <code>Nys to meet you </code>
-            </p>
-          <div className="navbar">
-              <a href="#" className="navitem">Work</a>
-              <a href="#" className="navitem">Learn</a>
-              <a href="#" className="navitem">About</a>
-            </div>
-        </header>
-
+      
         <div className="Nyssa-body">
 
           <div>
