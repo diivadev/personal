@@ -15,25 +15,28 @@ import HP from './HP.js';
 
 
 class Home extends Component {
-
-
   render() {
     return (
 
       <div className="App">
-      <header className="App-header">
-        <Link to="/"> <h1 className="App-title"> Nyssa Chennubhotla </h1> </Link>
-
-          <p className="App-intro">
-             <code>Nys to meet you </code>
-          </p>
-        <div className="navbar">
-            <a href="#" className="navitem">Work</a>
-            <a href="#" className="navitem">Learn</a>
-            <a href="#" className="navitem">About</a>
-          </div>
-      </header>
-
+      <div className="test">
+          <header className="App-header">
+            <div className="title">
+              <h1> Nyssa Chennubhotla</h1>
+            </div>
+             <nav>
+               <input type="checkbox" id="nav" class="hidden"/>
+               <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+               <div class="nav-container">
+                 <ul>
+                   <li><a href="#">Work</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Gallery</a></li>
+                 </ul>
+               </div>
+             </nav>
+          </header>
+        </div>
         <div className="Nyssa-body">
 
           <div className="first_row">
