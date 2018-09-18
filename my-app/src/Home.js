@@ -22,7 +22,7 @@ class Home extends Component {
       <div className="test">
           <header className="App-header">
             <div className="title">
-              <h1> Nyssa Chennubhotla</h1>
+              <h1> NC </h1>
             </div>
              <nav>
                <input type="checkbox" id="nav" class="hidden"/>
@@ -38,30 +38,30 @@ class Home extends Component {
           </header>
         </div>
         <div className="Nyssa-body">
+          <div className="elements">
+            <div className="first_row">
 
-          <div className="first_row">
+              <div className="Homep">
+                <div className="blah">
+                  <Link to="/HP" >
+                      <img src={hpimg} />
+                  </Link>
+                  <div className="HPD">
+                    <p className="hp_description">Homepage Redesign </p>
+                  </div>
+                </div>
 
-            <div className="Homep">
-              <div className="blah">
-                <Link to="/HP" >
-                    <img src={hpimg} />
-                </Link>
-                <div className="HPD">
-                  <p className="hp_description">Homepage Redesign </p>
+              </div>
+
+              <div className="OmniCloset">
+                <div className="blah2">
+                  <img src={omni} />
+                    <div className="OCD">
+                      <p class="oc_d"> Omni Closet </p>
+                    </div>
                 </div>
               </div>
-
             </div>
-
-            <div className="OmniCloset">
-              <div className="blah2">
-                <img src={omni} />
-                  <div className="OCD">
-                    <p class="oc_d"> Omni Closet </p>
-                  </div>
-              </div>
-            </div>
-
           </div>
 
           <div className="second_row">

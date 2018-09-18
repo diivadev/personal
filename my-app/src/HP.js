@@ -27,29 +27,30 @@ export default class HP extends Component {
 
       return (
         <div>
-        <header className="HP-header">
-          <Link to="/"> <h1 className="HP-title"> Nyssa Chennubhotla </h1> </Link>
+         <header>
+          <div className="hp-nav">
+             <input type="checkbox" id="nav" class="hidden"/>
+             <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+             <div class="nav-container-hp">
+               <ul>
+                 <li><a href="#">Work</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Gallery</a></li>
+               </ul>
+             </div>
 
-            <p className="HP-intro">
-               <code>Nys to meet you </code>
-            </p>
-          <div className="navbar">
-              <a href="#" className="navitem">Work</a>
-              <a href="#" className="navitem">Learn</a>
-              <a href="#" className="navitem">About</a>
-            </div>
-        </header>
-
+           </div>
+         </header>
           <body>
-          <div className="title">
+          <div className="HP-title">
             <h2> Redesigning a cleaner, less cluttered, and editorial style homepage for macys.com </h2>
           </div>
 
-          <div className="WF">
+          <div className="HP-WF">
             <code> Work file 1/4 </code>
           </div>
 
-          <div className="Slider">
+          <div className="sli">
             <Slider {...settings}>
               <div className='wrapper'>
                 <img src={hero1} className="hero1" alt="hero" />
@@ -72,11 +73,11 @@ export default class HP extends Component {
 
 
           <div className="box1">
-            <p>  Stakeholders  : VP of UX & Directory of Strategy </p>
-            <p> Role : Developer & Designer </p>
-            <p> Demo : <code> http://homepage-redesign.herokuapp.com/ </code> </p>
-
-
+            <div className="paragraph">
+              <p>  Stakeholders  : VP of UX & Directory of Strategy <br />
+                   Role : Developer & Designer <br />
+                   Demo : <code> http://homepage-redesign.herokuapp.com/ </code> </p>
+            </div>
           </div>
           </body>
           </div>

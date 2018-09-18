@@ -12,13 +12,14 @@ import gender from './assets/gender/gender.jpg'
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import HP from './HP';
 import Home from './Home';
+import About from './About';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
       <div className="App">
-      
+
         <div className="Nyssa-body">
 
           <div>
